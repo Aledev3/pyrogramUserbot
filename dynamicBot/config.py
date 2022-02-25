@@ -6,5 +6,7 @@ class config(object):
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "")
     OWNER_ID = int(os.environ.get("OWNER_ID", ""))
     BOT_PIC = None 
-    ALIVE_TEXT = None
+    ALV_TEXT = None
+    ALV_PIC = None
+    HNDLR = os.environ.get("HNDLR", "\.")
     GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN")
