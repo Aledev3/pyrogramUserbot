@@ -3,3 +3,7 @@ from .client import dynamic
 bot = dynamic
 borg = dynamic
 ub = dynamic
+
+# COMMAND HELP 
+
+HELP = {}
