@@ -6,6 +6,7 @@ class config(object):
     OWNER_USERNAME = os.environ.get("OWNER_USERNAME", "")
     OWNER_ID = int(os.environ.get("OWNER_ID", ""))
     BOT_PIC = None 
+    TOKEN = os.environ.get("TOKEN", "")
     ALV_TEXT = None
     ALV_PIC = None
     HNDLR = os.environ.get("HNDLR", "\.")
