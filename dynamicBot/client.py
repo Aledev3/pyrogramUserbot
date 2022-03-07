@@ -10,7 +10,7 @@ dynamic = Client(
 
 asst = Client(
   api_id = config.API_ID,
-  api_hash = config.API_HASH
+  api_hash = config.API_HASH,
   bot_token = config.TOKEN
   plugins={'root': "dynamicBot.assistant")
 )
