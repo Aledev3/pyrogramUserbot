@@ -1,4 +1,4 @@
-from ..config import config
+from dynamicBot.config import config
 from pyrogram import Client
 
 dynamic = Client(
