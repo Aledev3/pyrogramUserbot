@@ -11,3 +11,4 @@ py_v = '3.10.0'
 # COMMAND HELP 
 
 HELP = {}
+CMD_HELP = {}
