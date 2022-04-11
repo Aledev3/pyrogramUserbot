@@ -1,4 +1,4 @@
-from .. import dynamic
+from ..client import dynamic
 from pyrogram.errors import AccessTokenInvalid, ApiIdInvalid, ApiIdPublishedFlood
 
 
