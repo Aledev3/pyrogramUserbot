@@ -26,7 +26,7 @@ def time_formatter(milliseconds: int) -> str:
         ((str(milliseconds) + " millisecond(s), ") if milliseconds else "")
     return tmp[:-2]
 
-def md_help(module_name, commands):
+def cmd_help(module_name, commands):
     """
     Adds a modules help information.
     :param module_name: name of the module
