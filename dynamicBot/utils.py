@@ -1,3 +1,7 @@
+from dynamicBot import CMD_HELP
+
+
+
 def humanbytes(size):
     """Input size in bytes, outputs in a human readable format"""
     power = 2**10
@@ -21,3 +25,25 @@ def time_formatter(milliseconds: int) -> str:
         ((str(seconds) + " second(s), ") if seconds else "") + \
         ((str(milliseconds) + " millisecond(s), ") if milliseconds else "")
     return tmp[:-2]
+
+def md_help(module_name, commands):
+    """
+    Adds a modules help information.
+    :param module_name: name of the module
+    :param commands: list of lists, with command and description each.
+    """
+
+    # Key will be group name
+    # values will be dict of dicts of key command and value description
+
+    if module_name in CMD_HELP.keys():
+        command_dict = CMD_HELP[module_name]
+    else:
+        command_dict = {}
+
+    for x in commands:
+        for y in x:
+            if y is not x:
+                command_dict[x[0]] = x[1]
+
+    CMD_HELP[module_name] = command_dict
