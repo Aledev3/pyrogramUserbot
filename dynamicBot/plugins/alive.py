@@ -71,4 +71,4 @@ async def alive(_, msg: Message):
           await dynamic.send_message(msg.chat_id, X)
 
 
-HELP.update({f"{hl}alive": "Check if Bot is Working.."})
+cmd_help("alive", [[".alive", "Check if Bot is Working.."]])
