@@ -9,6 +9,7 @@ dynamic = Client(
 )
 
 asst = Client(
+  "dynamic_bot",
   api_id = config.API_ID,
   api_hash = config.API_HASH,
   bot_token = config.TOKEN,
