@@ -69,7 +69,7 @@ async def alive(_, msg: Message):
         elif ALV_PIC.endswith(".mp4"):
            await dynamic.send_video(msg.chat.id, ALV_PIC, X)
       else:
-          await dynamic.send_message(msg.chat_id, X)
+          await dynamic.send_message(msg.chat.id, X)
 
 
 cmd_help("alive", [[".alive", "Check if Bot is Working.."]])
