@@ -1,4 +1,4 @@
-from dynamicBot.client import dynamic
+from dynamicBot.client import dynamic, assnt
 from pyrogram.errors import AccessTokenInvalid, ApiIdInvalid, ApiIdPublishedFlood
 
 
